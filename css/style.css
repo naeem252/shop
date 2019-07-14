@@ -1,0 +1,151 @@
+
+html{
+    font-size: 10px;
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+
+/* top navigation */
+.main_heading{
+    background-color: #801B14;
+    padding: 1.6rem;
+    font-size: 2rem;
+    margin-bottom: 0 !important;
+    color: aliceblue;
+}
+.nopadding{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.top_nav{
+    background-color:#444;
+    padding: 1rem;
+}
+.arrow {
+    color: aliceblue;
+    font-size: 2rem;
+}
+.top_nav_item{
+    margin-right: 2rem;
+}
+.top_nav_link{
+    color: aliceblue;
+    font-size: 1.8rem;
+    transition: .5s ease-out;
+}
+.top_nav_link:hover{
+    opacity: .5;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+
+/* side navigation */
+.side_nav{
+    position: relative;
+    width: 100%;
+    background-color: #444;
+    height: 93vh;
+}
+.side_nav_link{
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    color: aliceblue;
+    opacity: .7;
+    transition: .5s ease-out;
+    width: 100%;
+}
+.side_nav_link:hover,.active{
+    text-decoration: none;
+    color: #fff;
+    background-color: #FF6F61;
+    opacity: 1;
+}
+
+/* main content */
+.greeting{
+    padding: 1.5rem 3rem;
+}
+.greeting_text{
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+.breadcums{
+    padding: 1.5rem 3rem;
+}
+.breadcums span{
+    opacity: .7;
+}
+.elements{
+    margin-bottom: 1.6rem;
+}
+.element_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:#FF6F61;
+    padding: 2rem 0rem;
+}
+.element_progress{
+    width: 90%;
+    height: 1rem;
+    border-radius: 100px;
+    margin:1rem 1rem;
+}
+.element_pro_bar{
+    background-color: aquamarine;
+    height: 100%;
+    border-radius: 100px;
+}
+.element_pro_bar1{
+    width: 82%;
+}
+.element_pro_bar2{
+    width: 55%;
+}
+.element_pro_bar3{
+    width: 84%;
+}
+.element_pro_bar4{
+    width: 46%;
+}
+
+.counter_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 3px 3px 15px #ccc;
+    padding: 2rem 0rem;
+}
+.couter_icon{
+    font-size: 3rem;
+    font-weight: normal;
+    color:#FFF587;
+}
+.couter_number{
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+.couter_footer{
+    font-size: 1.3rem;
+    opacity: .8;
+}
+
+.for-footer{
+    position: relative;
+}
+.footer{
+    position: absolute;
+    bottom: 2rem;
+    left: 15rem;
+    opacity: .8;
+
+}
