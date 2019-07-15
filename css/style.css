@@ -55,6 +55,7 @@ body{
     /* left: -2.3rem; */
     /* border: 2px solid red; */
     /* top: 0; */
+    
     padding: 0;
     right: -2.9rem;
     top: 4rem;
@@ -117,9 +118,26 @@ body{
 .side_drop_sub{
     position: absolute;
     list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    box-shadow: 0 2rem 10 #ddd;
+    transition: 0.5s ease-out;
+    transform-origin: top;
+    transform: scaleY(0);
 }
 .drop_sub_link{
     color:rgb(204, 191, 191);
+    padding: 1rem 0;
+    transition: 0.5s ease-out;
+    display: block;
+    padding-left: 2rem;
+}
+.drop_sub_link:hover{
+    text-decoration: none;
+    color: aliceblue;
+    background-color: #FF6F61;
+    width:100%;
 }
 
 /* main content */

@@ -39,12 +39,34 @@ var slide=false;
 
     });
 
+    // side drop
+    var side_drop=false;
+    $('#side_drop').click(function(){
+        if(!side_drop){
+            $('.side_drop_sub').css('transform',"scaleY(1)");
+            // setTimeout(()=>$('.user_sub').css('transform',"translateY(10px)"),300);
+            side_drop=true;
+        }else if(side_drop){
+            // $('.user_sub').css('transform',"translateY(0px)");
+            // setTimeout(()=>,300);
+            $('.side_drop_sub').css('transform',"scaleY(0)")
+            
+         
+            side_drop=false;
+        }
+
+
+    });
+
+
 $(document).click(function(e){
     if(!$(e.target).is('.top_nav_item,.top_nav_link,.top_nav_link i,.side_nav_link')){
         $('.top_nav_link').removeClass('active_t');
         $('.side_nav_link').removeClass('active');
         $('.user_sub').css("transform","scaleY(0)");
+        $('.side_drop_sub').css("transform","scaleY(0)");
         slide=false;
+        side_drop=false;
     }
 });//document after click
     
