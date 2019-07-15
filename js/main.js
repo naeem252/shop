@@ -30,9 +30,8 @@ var slide=false;
         }else if(slide){
             // $('.user_sub').css('transform',"translateY(0px)");
             // setTimeout(()=>,300);
-            $('.user_sub').css('transform',"scaleY(0)")
-            
-         
+            $('.user_sub').css('transform',"scaleY(0)");
+            console.log(544);
             slide=false;
         }
 
@@ -60,7 +59,7 @@ var slide=false;
 
 
 $(document).click(function(e){
-    if(!$(e.target).is('.top_nav_item,.top_nav_link,.top_nav_link i,.side_nav_link')){
+    if(!$(e.target).is('.top_nav_item,.top_nav_link,.top_nav_link i,.side_nav_link,.user_sub,.user_sub_link')){
         $('.top_nav_link').removeClass('active_t');
         $('.side_nav_link').removeClass('active');
         $('.user_sub').css("transform","scaleY(0)");
