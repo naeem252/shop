@@ -19,7 +19,9 @@ $page="profile";
     <div class="col-md-9 for-footer">
         <?php include "includes/page_heading.php";?>
 <!--      content goes here-->
-
+        <div class="row">
+            <a href="add.php?add=Admin" class="btn btn-success btn-lg m-4">Add New</a>
+        </div>
         <table class="table table-striped table-hover">
             <thead>
             <tr>

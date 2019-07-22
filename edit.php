@@ -44,9 +44,24 @@ $page="edit";
             $email=$_POST['email'];
             $user_name=$_POST['user_name'];
 
+
             $errors=validate_admin($name,$password,$confirm_password,$email,$user_name);
             if(empty($errors)){
                 echo "good";
+                $object=new Admin();
+                $object->name=$name;
+                $object->email=$email;
+                $object->password=$password;
+                $object->user_name=$user_name;
+
+            if($object->update_by_id($id)){
+
+                $_SESSION['update']=true;
+                $_SESSION['update_name']=$name;
+                re_direct('admin');
+                
+            }
+
             }else{
                 var_dump($errors);
             }

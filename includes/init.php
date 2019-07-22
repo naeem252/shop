@@ -1,5 +1,6 @@
 <?php
-
+ob_start();
+session_start();
 //for navigation active link
 $directoryURI = $_SERVER['REQUEST_URI'];
 $path = parse_url($directoryURI, PHP_URL_PATH);
